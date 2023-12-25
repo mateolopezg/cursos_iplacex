@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluación 1</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
+    <nav>
+       <a href="../index.html">&larr; Volver a la Página de Inicio</a>
+    </nav>
+    <hr>
+    <h2>Encuesta Rápida</h2>
+    <!-- Agrega una descripción a la tabla -->
+    <p>Recuerde que la encuesta es confidencial por lo que respondea las preguntas como más guste</p>
+
+    <section>
+        <hr>
+        <form action="./report.html">
+
+            <label for="hobbies">Pasatiempos (Enumerar):</label>
+            <input id="hobbies" name="hobbies" type="number" maxlength="50" required><br><br>
+
+            <fieldset>
+                <legend>Genero:</legend>
+                <input type="radio" id="femenino" name="genero" value="femenino" required>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino" required>
+                <label for="masculino">Masculino</label>
+                <input type="radio" id="not_genero" name="genero" value="not_genero" required>
+                <label for="not_genero">Ninguno</label>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>
+                    Trabajos realizados a temprana edad, describa como los realizó
+                    y en que aportan actualmente:
+                </legend>
+                <textarea id="txt_jobs" name="txt_jobs" rows="3" cols="40" required>
+                </textarea>
+                <p>
+                    Aspiraciones de investigación futuras, describa como se vería haciendo
+                    las labores:
+                </p>
+                <textarea id="txt_expectations" name="txt_expectations" rows="3" cols="40" required>
+                </textarea>
+            </fieldset><br><br>
+
+            <fieldset>
+                <legend>Elige de estos espacios del día cuáles son los más preciados</legend>
+                <input type="checkbox" id="temprano" name="espacios_dia" value="Temprano">
+                <label for="temprano">Temprano</label><br>
+                <input type="checkbox" id="mediodia" name="espacios_dia" value="Mediodía">
+                <label for="mediodia">Mediodía</label><br>
+                <input type="checkbox" id="tarde" name="espacios_dia" value="Tarde">
+                <label for="tarde">Tarde</label><br>
+                <input type="checkbox" id="noche" name="espacios_dia" value="Noche">
+                <label for="noche">Noche</label>
+            </fieldset><br><br>
+            
+
+            <input type="submit">
+            <input type="reset">
+        </form>
+        <hr>
+    </section>
+</body>
+
+</html>
